@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.0 on win32)" generated="20220628 15:02:49.063" rpa="false" schemaversion="3">
+<suite id="s1" name="Salary Automation" source="C:\Users\abhishek.rao\PycharmProjects\RobotFrameworkTest\Tests\HRMS\Salary_Automation">
+<suite id="s1-s1" name="Salary Process" source="C:\Users\abhishek.rao\PycharmProjects\RobotFrameworkTest\Tests\HRMS\Salary_Automation\Salary_Process.robot">
+<test id="s1-s1-t1" name="TESTING" line="49">
+<kw name="Split String" library="String">
+<var>${First}</var>
+<arg>${String}</arg>
+<arg>20</arg>
+<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
+<msg timestamp="20220628 15:02:49.986" level="INFO">${First} = ['', '22', '23']</msg>
+<status status="PASS" starttime="20220628 15:02:49.986" endtime="20220628 15:02:49.986"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>${First}[0]</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220628 15:02:49.988" level="INFO"/>
+<status status="PASS" starttime="20220628 15:02:49.987" endtime="20220628 15:02:49.988"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>${First}[1]</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220628 15:02:49.988" level="INFO">22</msg>
+<status status="PASS" starttime="20220628 15:02:49.988" endtime="20220628 15:02:49.988"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>${First}[2]</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20220628 15:02:49.989" level="INFO">23</msg>
+<status status="PASS" starttime="20220628 15:02:49.989" endtime="20220628 15:02:49.989"/>
+</kw>
+<tag>Testing</tag>
+<status status="PASS" starttime="20220628 15:02:49.984" endtime="20220628 15:02:49.990"/>
+</test>
+<status status="PASS" starttime="20220628 15:02:49.129" endtime="20220628 15:02:49.991"/>
+</suite>
+<status status="PASS" starttime="20220628 15:02:49.069" endtime="20220628 15:02:49.994"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Testing</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Salary Automation">Salary Automation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Salary Process">Salary Automation.Salary Process</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
