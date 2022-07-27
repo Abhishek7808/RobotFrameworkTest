@@ -1,0 +1,434 @@
+{
+  "Ledger Listing": {
+    "url": "https://demoprojects.e-connectsolutions.com/eprash-dev/ACC/MISReport/report/LedgerlistFilter",
+    "Account Name": {
+      "Value": "BILLS TO PAY(655)",
+      "Type": "Dropdown searchable",
+      "Locator": {
+        "Locator1": "xpath://span[contains(text(),'--Select One--')]",
+        "Locator2": "xpath://body/div[@id='select2-drop']/div[1]/input[1]"
+      }
+    },
+    "Voucher Type": {
+      "Value": "Select all",
+      "Type": "Multiselect Dropdown",
+      "Locator": {
+        "Locator1": "xpath://div[@class='btn-group']//button[@type='button']",
+        "Locator2": "xpath://label[@class='checkbox']//input[@value='multiselect-all']"
+      }
+    },
+    "Unit": {
+      "Value": "Head Office (CO)",
+      "Type": "Dropdown searchable",
+      "Locator": {
+        "Locator1": "//span[contains(text(),'Head Office (CO)')]",
+        "Locator2": "//div[@id='select2-drop']//div[@class='select2-search']//input[@type='text']"
+      }
+    },
+    "Status": {
+      "Value": "All",
+      "Type": "Dropdown",
+      "Locator": "xpath://select[@id='Status']"
+    },
+    "Show Child Unit": {
+      "Value": "Single Unit",
+      "Type": "Dropdown",
+      "Locator": "xpath://select[@id='showSingleUnit']"
+    },
+    "View": {
+      "Value": "Ledger View",
+      "Type": "Dropdown",
+      "Locator": "xpath://select[@id='ShowView']"
+    },
+    "Date To": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": "xpath://input[@id='txtTDATE']"
+    },
+    "Date From": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='txtFDATE']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    },
+    "Viewbutton": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "xpath://input[@id='btnView']"
+    },
+    "Reset": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "xpath://input[@id='btnReset']"
+    }
+  },
+  "Monthly Report": {
+    "url": "https://demoprojects.e-connectsolutions.com/eprash-dev/hrm/DivisionSalaryHead/index",
+    "Filter button": "//button[@id='btnformfilter']",
+    "Financial Year": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='FinancialYear']"
+    },
+    "Cycle Type": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='Cycletype']"
+    },
+    "Salary Cycle": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='SalaryCycleId']"
+    },
+    "Checkbox": {
+      "Value": "",
+      "Type": "Checkbox",
+      "Locator": "//input[@id='chkUnit']"
+    },
+    "Apply filter": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "//div[@class='btn-group btn-group-xs pull-right']//button[@type='submit']"
+    },
+    "Voucher Date From": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='VoucherFromDate']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    },
+    "Voucher Date To": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='VoucherToDate']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    }
+  },
+  "Annexure C1": {
+    "url": "https://demoprojects.e-connectsolutions.com/eprash-test/HRM/PayrollProcess/SalaryDetailReportFilter?q=QBoVzdEQJ2A=",
+    "Financial Year": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='Finyear']"
+    },
+    "Location": {
+      "Value": "",
+      "Type": "Dropdown Searchable",
+      "Locator":
+      {
+        "Locator1": "//div[@class='select2-container' and @id='s2id_UnitId']",
+        "Locator2": "//body/div[@id='select2-drop']/div/input"
+
+      }
+
+    },
+    "Type": {
+      "Value": "",
+      "Type": "Dropdown Searchable",
+      "Locator":
+      {
+        "Locator1": "//div[@class='col-md-2']//button[@class='multiselect dropdown-toggle btn btn-default']",
+        "Locator2": "//div[@class='btn-group open']//div[@class='input-group']//input[@class='form-control multiselect-search']",
+        "Locator3": "//li[@class='multiselect-item multiselect-all active']//label//input[@type='checkbox']",
+        "Locator4": "//label[@class='checkbox']//input[@parentid='0' and @value='10']"
+      }
+
+    },
+    "Checkbox": {
+      "Value": "",
+      "Type": "Checkbox",
+      "Locator": "//input[@id='chkUnit']"
+    },
+    "Salary Head": {
+      "Value": "",
+      "Type": "Dropdown Searchable",
+      "Locator":
+      {
+        "Locator1": "//*[@id='divsalaryhead']/div/button",
+        "Locator2": "//div[@id='divsalaryhead']//div//input[@class='form-control multiselect-search']",
+        "Locator3": "//label[@class='checkbox']//input[@value='491']"
+      }
+
+    },
+    "Date From": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='DisbursedDtFrom']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    },
+    "Date To": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='DisbursedDtTo']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    },
+    "Viewbutton": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "xpath://input[@id='btnView']"
+    }
+  },
+  "Payroll MIS" : {
+    "url" : "https://demoprojects.e-connectsolutions.com/eprash-dev/HRM/MIS/SalaryFilter" ,
+    "Cycle Type" :
+    {
+      "Value":
+      {
+        "Value1": "Salary",
+        "Value2": "Arrear",
+        "Value3": "Leave Enchashment"
+      },
+      "Type": "Dropdown ",
+      "Locator":  "xpath: //select[@id='Cycletype']"
+    },
+    "Financial Year":
+    {
+      "Value": "",
+      "Type": "Dropdown ",
+      "Locator": "xpath://select[@id='FinancialYear']"
+    },
+    "Payroll Cycle" :
+    {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator":  "xpath : //select[@id='SalaryCycleId'] "
+    },
+    "Payroll Status" :
+    {
+      "Value": "",
+      "Type": "Dropdown ",
+      "Locator":  "xpath : //select[@id='LockStatus']"
+    },
+    "Office Type":
+    {
+      "Value": "",
+      "Type": "Dropdown searchable",
+      "Locator":
+      {
+        "Locator1": "xpath : //div[@class='col-md-4']//div[@class='row']//button[@title='None selected']",
+        "Locator2": "xpath : //div[@class='btn-group open']//ul//li//a//label//input[1] "
+      }
+    },
+    "Pay Group" :
+    {
+      "Value": "",
+      "Type": "Dropdown searchable",
+      "Locator":
+      {
+        "Locator1": "xpath : //div[@id='divPayGroup']",
+        "Locator2": "xpath : //div[@id='divPayGroup']//div[@id='parDrView']/div/ul/li[3]/a  "
+      }
+    },
+    "Payment Location" :
+    {
+      "Value": "",
+      "Type": "Dropdown searchable",
+      "Locator":
+      {
+        "Locator1": "xpath :  //div[@id='payunitdiv']//div[@id='parDrView']/div/button  ",
+        "Locator2": "xpath :  //*[@id='parDrView']/div[@class='btn-group open']/ul/li[2]/a/label  "
+      }
+    },
+    "Employee Location" :
+    {
+      "Value": "",
+      "Type": "Dropdown searchable",
+      "Locator":
+      {
+        "Locator1": "xpath : //div[@id='fdivunit']//div[@id='parDrView']/div/button ",
+        "Locator2": "xpath : //div[@class='btn-group open']//ul//li[2]//a//label//input[1] "
+      }
+    },
+    "View Annexure Reports Button" :
+    {
+      "Value": "",
+      "Type": "Button ",
+      "Locator": "xpath : //input[@id='btnAnnexureReports']"
+    },
+    "View Button" :
+    {
+      "Value": "",
+      "Type": "Button ",
+      "Locator":
+      {
+        "Locator1": "xpath : //input[@id='btnView'] ",
+        "Locator2": "xpath : //div[@id='LoadingImage']//img  "
+      }
+    },
+
+    "Cancel Button" :
+    {
+      "Value": "",
+      "Type": "Button ",
+      "Locator": "xpath : //input[@id='btnCancel'] "
+    },
+    "LE Application From" :
+    {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath: //input[@id='LEFromDate']",
+        "Locator2": "xpath://select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://select[@class='ui-datepicker-year']",
+        "Locator4": "xpath: //tbody/tr/td/a"
+      }
+    },
+    "To Date" :
+    {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator":
+      {
+        "Locator1": "xpath: //input[@id='LEToDate']",
+        "Locator2": "xpath: //select[@class='ui-datepicker-month']" ,
+        "Locator3": "xpath: //select[@class='ui-datepicker-year']",
+        "Locator4": "xpath: //tbody/tr/td/a "
+      }
+    }
+  },
+  "Income Tax Deduction" : {"url" : "https://demoprojects.e-connectsolutions.com/eprash-dev/HRM/MIS/IncomeTaxDeductionIndex",
+    "Financial year" :
+    {
+      "Value"   : "4",
+      "Type"    : "Dropdown",
+      "Locator" : "//select[@id='FINYEAR']"
+    },
+    "Location" :
+    {
+      "Value"   : "",
+      "Type"    : "Searchable Dropdown",
+      "Locator" :
+      {
+        "Locator1" : "//*[@id='s2id_unitid']/a/span ",
+        "Locator2" : "//*[@id='select2-drop']/ul/li[2]/div "
+      }
+    },
+    "Pay Group" :
+    {
+      "Value"   : "",
+      "Type"    : "Searchable Dropdown",
+      "Locator" :
+      {
+        "Locator1" : "//div[@id='s2id_PbGroupID']/a ",
+        "Locator2" : "//*[@id='select2-drop']/ul/li[2]/div "
+      }
+    },
+    "Division" :
+    {
+      "Value"   : "",
+      "Type"    : "checkbox Dropdown",
+      "Locator" :
+      {
+        "Locator1" : "//div[@class='btn-group']",
+        "Locator2" : "//div[@class='btn-group open']/ul/li[1]"
+      }
+    },
+    "Employee Name" :
+    {
+      "Value"   : "",
+      "Type"    : "Searchable Dropdown",
+      "Locator" :
+      {
+        "Locator1" : "//div[@id='s2id_EmployeeId']/a/span ",
+        "Locator2" : "//*[@id='select2-drop']/ul/li[2]/div "
+      }
+    },
+    "Report Type" :
+    {
+      "Value"   : "1",
+      "Type"    : "Dropdown",
+      "Locator" : "//select[@id='ReportType']"
+    },
+    "Show Child Location Employee" :
+     {
+      "Value"   : "",
+      "Type"    : "checkbox",
+      "Locator" : "//*[@id='chkUnit']"
+    },
+    "View Button" :
+     {
+      "Value"   : "",
+      "Type"    : "checkbox",
+      "Locator" : "//input[@id='btnView']"
+    },
+    "Calculation done for" :
+    {
+      "Value"   : "",
+      "Type"    : "",
+      "Locator" : "//b[@id='btext']/span[1] "
+    },
+    "Remaining Employees" :
+     {
+      "Value"   : "",
+      "Type"    : "",
+      "Locator" : "//b[@id='btext']/span[1] "
+    },
+    " Recalculate" :
+    {
+      "Value": "",
+      "Type": "",
+      "Locator": "//*[@id='lblcalculatetext'] "
+    }
+  },
+  "GSTR1": {
+    "url": "https://demoprojects.e-connectsolutions.com/eprash-test/ACC/MISFilter/GSTR1Filter",
+    "GSTR Type": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='ddlGSTType']"
+    },
+    "Unit": {
+      "Value": "Head Office(CO)",
+      "Type": "Dropdown Searchable",
+      "Locator": {
+        "Locator1": "//div[@id='s2id_Unit']",
+        "Locator2": "//div[@class='select2-search']//input[@class='select2-input']",
+        "Locator3": "//*[@id='select2-drop']/ul/li[23]/div"
+      }
+    },
+    "From Date": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='txtFDATE']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    },
+    "To Date": {
+      "Value": "",
+      "Type": "Datepicker",
+      "Locator": {
+        "Locator1": "xpath://input[@id='txtTDATE']",
+        "Locator2": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-month']",
+        "Locator3": "xpath://div[@class='ui-datepicker-title']//select[@class='ui-datepicker-year']",
+        "Locator4": "xpath://table[@class='ui-datepicker-calendar']//a"
+      }
+    },
+    "Viewbutton": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "xpath://input[@id='btnView']"
+    }
+  }
+}
