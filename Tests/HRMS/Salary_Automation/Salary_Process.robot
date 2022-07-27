@@ -1,9 +1,11 @@
 *** Settings ***
-Library  SeleniumLibrary
-Library           OperatingSystem
-Library           Collections
-Library           String
-Library           RequestsLibrary
+Library     SeleniumLibrary
+Library     OperatingSystem
+Library     Collections
+Library     String
+Library     RequestsLibrary
+Library     DateTime
+Library     OperatingSystem
 
 *** Variables ***
 ${browser}      chrome
@@ -13,6 +15,7 @@ ${Password}     admin
 ${Salary_Cycle_Url}     https://demoprojects.e-connectsolutions.com/eprash-dev/HRM/SalaryCycle
 ${Manual_Attendance_Url}     https://demoprojects.e-connectsolutions.com/eprash-dev/HRM/ManualAttendance
 ${String}       20222023
+${HrmsData}     Resource/Data/HrmsData.json
 
 *** Test Cases ***
 Salary_Cycle_Creation
@@ -48,10 +51,14 @@ Ledger Edit
 
 TESTING
     [Tags]  Testing
-    ${First}    Split String    ${String}    20
-    Log Many    ${First}[0]
-    Log Many    ${First}[1]
-    Log Many    ${First}[2]
+    Load JSON
+    #${currentDate}  get current date
+    #${Date}    Split String    ${currentDate}    -
+    #${Day}    Split String    ${Date}[2]    ${EMPTY}
+    ${Day}  set variable    09
+    Log Many    ${Day}
+    Log Many   ${Day[0]},${Day[1]}
+    Log To Console    ${Day[1]}
 
 *** Keywords ***
 Login_into_EPRASH
@@ -62,11 +69,20 @@ Login_into_EPRASH
     Click Button    id:btnLogin
     sleep   2
     title should be     RISL: Dashboard
-    #title should be     AVVNL: Dashboard
+    ##########################################
+
 
 Check_Salary_Cycle_On_List
     Wait Until Page Contains Element        //td[contains(text(),'Apr 22')]
 
 
+Load JSON
+    #${json}     Get File    HrmsData.json
+    ${json}     Get File    ${HrmsData}
+    # convert the data to a python object
+    ${object}=  Evaluate  json.loads('''${json}''')  json
+    #set Suite variable     ${object}
+    set global variable     ${object}
+    Log Many    &{object}    console=yes
 
 

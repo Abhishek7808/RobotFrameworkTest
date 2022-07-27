@@ -1,0 +1,1693 @@
+{
+  "Salary_Cycle": {
+    "URL": "HRM/SalaryCycle",
+    "Description": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "DESCRIPTION"
+    },
+    "Financial_Year": {
+      "Value": "20192020",
+      "Type": "Dropdown",
+      "Locator": "FINYEAR"
+    },
+    "Type": {
+      "Value": "Salary",
+      "Type": "Dropdown",
+      "Locator": "TYPE"
+    },
+    "Start_Date": {
+      "Value": {
+        "Day": "05",
+        "Month": "feb",
+        "Year": "2020"
+      },
+      "Type": "Date",
+      "Locator": "START_DATE"
+    },
+    "End_Date": {
+      "Value": {
+        "Day": "05",
+        "Month": "feb",
+        "Year": "2020"
+      },
+      "Type": "Date",
+      "Locator": "END_DATE"
+    },
+    "DDO Heads": {
+      "Value": "",
+      "Type": "DropdownCheckBox",
+      "Locator1": "//button[@class='multiselect dropdown-toggle btn btn-default']",
+      "Locator2": "//label[contains(text(),'Select all')]"
+    },
+    "Visible": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "VISIBLE"
+    },
+    "Save": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnSave"
+    },
+    "Cancel": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnCancel"
+    }
+  },
+  "Mark_Attendance": {
+    "URL": "HRM/ManualAttendance",
+    "Financial_Year": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='ddlFinyear']"
+    },
+    "Month": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='ddlSalaryCycleId']"
+    },
+    "Employee Unit": {
+      "Value": "Select all ",
+      "Type": "SearchSelectDropdown",
+      "Locator1": "//div[@id='s2id_UnitFilter']//div",
+      "Locator2": "//*[@id='select2-drop']/div/input"
+    },
+    "Pay Group": {
+      "Value": "",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "//div[@id='s2id_ddlPB_GROUP_ID']//div",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Employee Location": {
+      "Value": "",
+      "Type": "SearchSelectDropDown",
+      "Locator": {
+        "Locator1": "//div[@id='s2id_UnitFilter']",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Designation": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='ddlDesigId']"
+    },
+    "Division": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DIVISION"
+    },
+    "Is Gazetted": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='GAZETTED']"
+    },
+    "Filters": {
+      "Financial_Year": {
+        "Type": "Dropdown",
+        "Value": "20192020",
+        "Locator": "ddlFinyearFilter"
+      },
+      "Month": {
+        "Type": "Dropdown",
+        "Value": "Fabruary 2020",
+        "Locator": "ddlSalaryCycleIdFilter"
+      },
+      "Pay Group": {
+        "Type": "SearchSelectDropdown",
+        "Value": "RIICO STAFF (Head Office)",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_ddlPbGroupFilter']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Employee Location": {
+        "Value": "",
+        "Type": "SearchSelectDropDown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_ddlUnitFilter']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      }
+    }
+  },
+  "Salary_Paybill": {
+    "URL": "HRM/SalaryPaybill",
+    "Salary Difference": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "SalDiff"
+    },
+    "Back To List": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "'btn btn-primary BackToList"
+    },
+    "Save": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnSave"
+    },
+    "Financial_Year": {
+      "Value": "20222023",
+      "Type": "Dropdown",
+      "Locator": "FinYear"
+    },
+    "Month": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "SalaryCycleID"
+    },
+    "Pay Group": {
+      "Value": "CO",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "s2id_PbGroupID",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Filter": {
+      "Month": {
+        "Value": "128",
+        "Type": "Dropdown",
+        "Locator": "SalaryCycleID"
+      },
+      "Pay Group": {
+        "Value": "Head Office",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_PayGroupIdIndex']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Payment Unit": {
+         "Value": "Head Office",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_UnitIds']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      }
+    },
+    "Financial Year": {
+      "Value": "20222023",
+      "Type": "Dropdown",
+      "Locator": "FinYear"
+    },
+    "Bill Date": {
+      "Value": {
+        "Day": "09",
+        "Month": "Jun",
+        "Year": "2022"
+      },
+      "Type": "Date",
+      "Locator": "BILL_DATE"
+    },
+    "Payment Unit": {
+      "Value": "Head Office",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "//div[@id='s2id_UnitId']",
+        "Locator2": "//div[@id='select2-drop']//input[contains(@class,'select2-input')]"
+      }
+    },
+    "Manual Bill No": {
+      "Value": "1243",
+      "Type": "Text-value",
+      "Locator": "txtManualBillNo"
+    },
+    "Payslip Unit": {
+      "Value": "Head Office",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "s2id_PayUnitId",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Remarks": {
+      "Value": "",
+      "Type": "Text-value",
+      "Locator": "txtremarks"
+    },
+    "Bill Date": {
+      "Value": {
+        "Day": "09",
+        "Month": "jun",
+        "Year": "2022"
+      },
+      "Type": "Date",
+      "Locator": "BILL_DATE"
+    },
+    "Payment Unit": {
+      "Value": "Head Office",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "s2id_UnitId",
+        "Locator2": "//div[@id='select2-drop']//input[contains(@class,'select2-input')]"
+      }
+    },
+    "Manual Bill No": {
+      "Value": "1243",
+      "Type": "Text-value",
+      "Locator": "txtManualBillNo"
+    },
+    "Payslip Unit": {
+      "Value": "Head Office",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "s2id_PayUnitId",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Remarks": {
+      "Value": "",
+      "Type": "Text-value",
+      "Locator": "txtremarks"
+    },
+    "Employee Unit": {
+      "Value": "Select all ",
+      "Type": "Dropdown-CheckBox",
+      "Locator": {
+        "Locator1": "//div[@class='btn-group open']",
+        "Locator2": "//*[@id='MainBody']/form//ul/li[1]//input"
+      }
+
+    },
+    "Division": {
+      "Value": "",
+      "Type": "DropdownCheckBox",
+      "Locator1": "//div[@class='btn-group open']//button[@class='multiselect dropdown-toggle btn btn-default'][contains(text(),'None selected')]",
+      "Locator2": "//div[@class='btn-group open']//li[@class='multiselect-item multiselect-all']//input"
+    },
+    "View": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnView"
+    }
+  },
+  "Salary_Detail": {
+    "URL": "HRM/PayrollProcess/Index#",
+    "Search by Employee details": {
+      "Value": "",
+      "Type": "Text-value",
+      "Locator": "SearchText"
+    },
+    "Search Button": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "BtnSearchfilter"
+    },
+    "Reset Button": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "BtnResSearch"
+    },
+    "Filter Button": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "'btn btn-default"
+    }
+  },
+  "Salary Diffrence": {
+    "Salary Difference": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "SalDiff"
+    },
+    "Financial Year ": {
+      "Value": "20192020",
+      "Type": "Dropdown",
+      "Locator": "PrevFinyear"
+    },
+    "Salary Cycle": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "PrevSalaryCycleId"
+    },
+    "Financial Year Compare": {
+      "Value": "20192020",
+      "Type": "Dropdown",
+      "Locator": "CurrFinyear"
+    },
+    "Salary Cycle Compare": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "CurrSalaryCycleId"
+    },
+    "Unit": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "UnitId"
+    },
+    "Pay Bill No.": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "PayBillId"
+    },
+    "Report Type ": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "PayBillId"
+    },
+    "View": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "'btnView"
+    },
+    "Reset": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnReset"
+    }
+  },
+  "Salary_Detail_Process": {
+    "URL": "HRM/PayrollProcess/Index#",
+    "Action": {
+      "Value": "Process",
+      "Type": "Dropdown",
+      "Locator": "btn-group-xs pull-right open"
+    },
+    "Financial_Year": {
+      "Value": "20192020",
+      "Type": "Dropdown",
+      "Locator": "ddlFinyear"
+    },
+    "Month": {
+      "Value": "128",
+      "Type": "Dropdown",
+      "Locator": "ddlSalaryCycleId"
+    },
+    "Employee Sub Unit": {
+      "Value": "Select all ",
+      "Type": "DropdownCheckBox",
+      "Locator1": "divsSubUnit",
+      "Locator2": "//div[@class='btn-group open']//li[@class='multiselect-item multiselect-all']//input"
+    },
+    "Employee Location": {
+      "Value": "Select all ",
+      "Type": "Dropdown-CheckBox",
+      "Locator": {
+           "Locator1": "//div[@id='divunit']",
+           "Locator2": "//*[@id='divunit']/div/ul/li[1]/div/input"
+      }
+    },
+    "Pay Group": {
+      "Value": "",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+          "Locator1": "//div[@id='s2id_ddlPB_GROUP_ID']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+
+    },
+    "Designation": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "ddlDesigId"
+    },
+    "Division": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DIVISION"
+    },
+    "Post": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "ddlPostId"
+    },
+    "Process": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnSave"
+    },
+    "Cancel": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnCancel"
+    },
+    "Filters": {
+      "Financial_Year": {
+        "Value": "20192020",
+        "Type": "Dropdown",
+        "Locator": "//select[@id='Finyear']"
+      },
+      "Month": {
+        "Value": "128",
+        "Type": "Dropdown",
+        "Locator": "//select[@id='SalaryCycleId']"
+      },
+      "Employee Sub Unit": {
+        "Value": "Select all ",
+        "Type": "DropdownCheckBox",
+        "Locator1": "//button[contains(text(),'None selected')]",
+        "Locator2": "//div[contains(@class,'btn-group open')]//li[contains(@class,'multiselect-item multiselect-all')]//input"
+      },
+      "Designation": {
+        "Value": "",
+        "Type": "Dropdown",
+        "Locator1": "s2id_DesigId",
+        "Locator2": "//div[@id='select2-drop']//input[@class='select2-input']"
+      },
+      "Section": {
+        "Value": "128",
+        "Type": "Dropdown",
+        "Locator": "SectionId"
+      },
+      "Is Gazetted": {
+        "Value": "",
+        "Type": "Dropdown",
+        "Locator": "IsGazetted"
+      },
+      "Employee Location": {
+        "Value": "Select all ",
+        "Type": "Dropdown-CheckBox",
+        "Locator": {
+           "Locator1": "//div[@id='fdivunit']",
+           "Locator2": "//*[@id='fdivunit']/div/ul/li[1]/div/input"
+        }
+
+      },
+      "Pay Group": {
+        "Value": "",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "s2id_PB_GROUP_ID",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Division": {
+        "Value": "",
+        "Type": "Dropdown",
+        "Locator": "divisionid"
+      },
+      "Status": {
+        "Value": "",
+        "Type": "Dropdown",
+        "Locator": "Status"
+      },
+      "Sort By": {
+        "Value": "",
+        "Type": "Dropdown",
+        "Locator": "SortBy"
+      },
+      "Apply filter": {
+        "Value": "",
+        "Type": "Button",
+        "Locator": "btnformfilter"
+      },
+      "Reset": {
+        "Value": "",
+        "Type": "Button",
+        "Locator": "btnformfilter"
+      }
+    }
+  },
+  "Salary Detail Lock": {
+    "Action": {
+      "Value": "Lock",
+      "Type": "Dropdown",
+      "Locator": "btn-group-xs pull-right open"
+    }
+  },
+  "Employee Entry": {
+    "Employee Code ": {
+      "Value": "Qmate1234",
+      "Type": "Text Value",
+      "Locator": "EMPNO"
+    },
+    "SSO Number": {
+      "Value": "Employee",
+      "Type": "Text Value",
+      "Locator": "SSO_NUMBER"
+    },
+    "RAJERP Employee ID": {
+      "Value": "QMATE_4",
+      "Type": "Text Value",
+      "Locator": "RAJERP_EMPLOYEE_ID"
+    },
+    "Title ": {
+      "Value": "Mr.",
+      "Type": "Dropdown",
+      "Locator": "NAME_TITLE"
+    },
+    "First Name": {
+      "Value": "QMATE_12",
+      "Type": "Text Value",
+      "Locator": "EMPNAME"
+    },
+    "Middle Name": {
+      "Value": "QMATE2",
+      "Type": "Text Value",
+      "Locator": "MIDDLE_NAME"
+    },
+    "Last Name ": {
+      "Value": "QMATE_12",
+      "Type": "Text Value",
+      "Locator": "LAST_NAME"
+    },
+    "Father Name": {
+      "Value": "QMATE2",
+      "Type": "Text Value",
+      "Locator": "FATHERNAME"
+    },
+    "Date of Birth ": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "1992"
+      },
+      "Type": "Date",
+      "Locator": "DATE_OF_BIRTH"
+    },
+    "Service Status": {
+      "Value": "971",
+      "Type": "Dropdown",
+      "Locator": "SERVICE_STATUS_ID"
+    },
+    "Maritial Status": {
+      "Value": "21",
+      "Type": "Dropdown",
+      "Locator": "MARITAL_STATUS_ID"
+    },
+    "Gender": {
+      "Value": "17",
+      "Type": "Dropdown",
+      "Locator": "GENDER_ID"
+    },
+    "Date of Joining": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "2015"
+      },
+      "Type": "Date",
+      "Locator": "DATE_OF_JOINING"
+    },
+    "Date of Confirmation": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "2017"
+      },
+      "Type": "Date",
+      "Locator": "DATE_OF_CONFIRMATION"
+    },
+    "POSTING LOCATION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "POSTING_LOCATION_ID"
+    },
+    "EMPLOYEE BELONGS": {
+      "Value": "NO",
+      "Type": "Dropdown",
+      "Locator": "EMPLOYEE_CATEGORY_ID"
+    },
+    "DESIGNATION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DESIGNATION_ID"
+    },
+    "CADRE": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "CADRE_ID"
+    },
+    "DEPARTMENT": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DEPARTMENT_ID"
+    },
+    "SECTION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "SECTION_ID"
+    },
+    "DIVISION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DIVISION_ID"
+    },
+    "Bank Name": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "BANK_ID"
+    },
+    "BANK_BRANCH_ID": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "BANK_BRANCH_ID"
+    },
+    "IFSC Code": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "IFSC_CODE"
+    },
+    "Bank Account Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "BANK_ACCOUNT_NO"
+    },
+    "Mobile": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "MOBILE_NUMBER"
+    },
+    "Email": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "EMAIL_ID"
+    },
+    "Cast Category": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "CASTE_CATEGORY_ID"
+    },
+    "DISCIPLINE": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DISCIPLINE_ID"
+    },
+    "RELIGION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "RELIGION_ID"
+    },
+    "PAYSCALE": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "PAYSCALE_ID"
+    },
+    "Cost Center": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "select2-drop-mask"
+    },
+    "PAN No": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PAN_NO"
+    },
+    "PF Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PF_NUMBER"
+    },
+    "CPF Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "CPF_NUMBER"
+    },
+    "EPS Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "EPS_NUMBER"
+    },
+    "UAN Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "UAN_NUMBER"
+    },
+    "NPS Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "NPS_NUMBER"
+    },
+    "GPF Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "GPF_NUMBER"
+    },
+    "PAY GROUP": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "PAYGROUP_ID"
+    },
+    "PPF Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PPF_NUMBER"
+    },
+    "SI Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "SI_NUMBER"
+    },
+    "PRAN Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PRAN_NUMBER"
+    },
+    "Aadhar Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "AADHAR_NO"
+    },
+    "Level No": {
+      "Value": "QMATE20",
+      "Type": "Text Value",
+      "Locator": "LEVEL_NO"
+    },
+    "Cell No": {
+      "Value": "QMATE1900",
+      "Type": "Text Value",
+      "Locator": "Cell No"
+    },
+    "POSITION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "POSITION_ID"
+    },
+    "Reporting Officer": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "RO_ID"
+    },
+    "Controlling Officer": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "CO_ID"
+    },
+    "GAZETTED": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "GAZETTED"
+    },
+    "CLASS_ID": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "CLASS_ID"
+    },
+    "SERVICE GROUP": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "SERVICE_GROUP_ID"
+    },
+    "WORK CATEGORY": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "WORK_CATEGORY_ID"
+    },
+    "Submit": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnSubmit"
+    },
+    "Reset": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btn btn-danger"
+    }
+  },
+  "Deputation Detail": {
+    "Deputation Order No": {
+      "Value": "Qmate1234",
+      "Type": "Text Value",
+      "Locator": "ORDER_NO"
+    },
+    "Joining Date (RISL)": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "1992"
+      },
+      "Type": "Date",
+      "Locator": "IMPLEMENTATION_DATE"
+    },
+    "Parent Department Name ": {
+      "Value": "42",
+      "Type": "Dropdown",
+      "Locator": "EnrollingUnitId"
+    },
+    "Is Salary Process ": {
+      "Value": "1",
+      "Type": "Dropdown",
+      "Locator": "IS_SALARY_PROCESS"
+    },
+    "Relieving Date From Parent Department": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "1992"
+      },
+      "Type": "Date",
+      "Locator": "DEPUTATION_PERIOD_SD"
+    },
+    "Deputation Period End Date": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "2015"
+      },
+      "Type": "Date",
+      "Locator": "'DEPUTATION_PERIOD_ED"
+    },
+    "Continue": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "depcontinue"
+    }
+  },
+  "Personal Detail": {
+    "Title ": {
+      "Value": "Mr.",
+      "Type": "Dropdown",
+      "Locator": "empTitle"
+    },
+    "First Name": {
+      "Value": "QMATE_12",
+      "Type": "Text Value",
+      "Locator": "FirstName"
+    },
+    "Middle Name": {
+      "Value": "QMATE2",
+      "Type": "Text Value",
+      "Locator": "MiddleName"
+    },
+    "Last Name ": {
+      "Value": "QMATE_12",
+      "Type": "Text Value",
+      "Locator": "LastName"
+    },
+    "Gender": {
+      "Value": "17",
+      "Type": "Dropdown",
+      "Locator": "GenderId"
+    },
+    "Maritial Status": {
+      "Value": "21",
+      "Type": "Dropdown",
+      "Locator": "MaritalStatusId"
+    },
+    "Service Status": {
+      "Value": "968",
+      "Type": "Dropdown",
+      "Locator": "ServiceStatus"
+    },
+    "Father Name": {
+      "Value": "QMATE2",
+      "Type": "Text Value",
+      "Locator": "FATHER_NAME"
+    },
+    "Employee Number": {
+      "Value": "Qmate1234",
+      "Type": "Text Value",
+      "Locator": "EnrollmentNumber"
+    },
+    "SSO ID": {
+      "Value": "Employee",
+      "Type": "Text Value",
+      "Locator": "Employee_SsoId"
+    },
+    "Date of Birth ": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "1992"
+      },
+      "Type": "Date",
+      "Locator": "DateOfBirth"
+    },
+    "Religion": {
+      "Value": "1",
+      "Type": "Dropdown",
+      "Locator": "ReligionId"
+    },
+    "Blood Group": {
+      "Value": "126",
+      "Type": "Dropdown",
+      "Locator": "BLOOD_GROUP"
+    },
+    "Deputation Month": {
+      "Value": "15",
+      "Type": "Text Value",
+      "Locator": "DeputationMonth"
+    },
+    "Retirement Date": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "2017"
+      },
+      "Type": "Date",
+      "Locator": "RetirementDate"
+    },
+    "POSTING LOCATION": {
+      "Value": "6",
+      "Type": "Dropdown",
+      "Locator": "unitid"
+    },
+    "SECTION": {
+      "Value": "120",
+      "Type": "Dropdown",
+      "Locator": "empdetail_SECTION_ID"
+    },
+    "CADRE": {
+      "Value": "8",
+      "Type": "Dropdown",
+      "Locator": "ddl_GROUP"
+    },
+    "DESIGNATION": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DesignationID"
+    },
+    "PAY GROUP": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "PayBillID"
+    },
+    "Bank": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "BankID"
+    },
+    "BANK_BRANCH_ID": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "BankBranchID"
+    },
+    "Bank Account Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "BANK_ACCOUNT_NO"
+    },
+    "DIVISION": {
+      "Value": "46",
+      "Type": "Dropdown",
+      "Locator": "empdetail_DIVISION"
+    },
+    "Pay Band": {
+      "Value": "17",
+      "Type": "Dropdown",
+      "Locator": "PayScaleID"
+    },
+    "IFSC Code": {
+      "Value": "HDFC54556",
+      "Type": "Text Value",
+      "Locator": "empbankdetail_IFSC_CODE"
+    },
+    "Level No": {
+      "Value": "L-3",
+      "Type": "Dropdown",
+      "Locator": "LevelNumber"
+    },
+    "Cost Center": {
+      "Value": "730",
+      "Type": "Dropdown",
+      "Locator": "CostCenterId"
+    },
+    "Cell No": {
+      "Value": "1",
+      "Type": "Dropdown",
+      "Locator": "CellNumber"
+    },
+    "Service Category": {
+      "Value": "247",
+      "Type": "Dropdown",
+      "Locator": "empdetail_ServiceCategory"
+    },
+    "Discipline": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "empdetail_DisciplineId"
+    }
+  },
+  "Contact Detail": {
+    "Mobile": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "ContactDetail_MobileNumber"
+    },
+    "Email Id": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "ContactDetail_EmailAddress"
+    },
+    "Phone Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "ContactDetail_PhoneNumber"
+    },
+    "Emergency Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "ContactDetail_EmergencyNumber"
+    }
+  },
+  "Correspondence Address": {
+    "Address Line 1": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "CorrespondenceAddress_AddressLine1"
+    },
+    "Address Line 1": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "CorrespondenceAddress_AddressLine2"
+    },
+    "Country": {
+      "Value": "1",
+      "Type": "Dropdown",
+      "Locator": "CorrespondenceAddress_CountryId"
+    },
+    "State Province Region": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "CorrespondenceAddress_StateName"
+    },
+    "City/Village": {
+      "Value": "1062",
+      "Type": "Dropdown",
+      "Locator": "CorrespondenceAddress_CityId"
+    },
+    "ZIP Postal Code": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "CorrespondenceAddress_Zip"
+    }
+  },
+  "Permanent Address": {
+    "Address Line 1": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PermanentAddress_AddressLine1"
+    },
+    "Address Line 1": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PermanentAddress_AddressLine2"
+    },
+    "Country": {
+      "Value": "1",
+      "Type": "Dropdown",
+      "Locator": "PermanentAddress_CountryId"
+    },
+    "State Province Region": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PermanentAddress_StateName"
+    },
+    "City/Village": {
+      "Value": "1062",
+      "Type": "Dropdown",
+      "Locator": "PermanentAddress_CityId"
+    },
+    "ZIP Postal Code": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PermanentAddress_Zip"
+    }
+  },
+  "Save and Continue": {
+    "Value": "",
+    "Type": "Button",
+    "Locator": "continue"
+  },
+  "Other Detail": {
+    "PAN Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PANNumber"
+    },
+    "CPF Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "CPFNumber"
+    },
+    "GPF Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "GPFNumber"
+    },
+    "PPN Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PPNNumber"
+    },
+    "GIS Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "GISNumber"
+    },
+    "Aadhar Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "AADHAR_NO"
+    },
+    "PRAN Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "PRANNumber"
+    },
+    "SI Number": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "SINumber"
+    },
+    "Caste Category": {
+      "Value": "1",
+      "Type": "Dropdown",
+      "Locator": "CasteCategoryId"
+    },
+    "Personal Identification Mark": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "Personal_identification_mark"
+    }
+  },
+  "Save and Continue": {
+    "Value": "",
+    "Type": "Button",
+    "Locator": "otcontinue"
+  },
+  "Salary Detail": {
+    "Effective From": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "2018"
+      },
+      "Type": "Date",
+      "Locator": "xtSalaryHeadDate"
+    },
+    "Effective Till": {
+      "Value": {
+        "Day": "01",
+        "Month": "Dec",
+        "Year": "2023"
+      },
+      "Type": "Date",
+      "Locator": "SalaryHeadEndDate"
+    },
+    "Running Pay": {
+      "Value": "QmateRunning Pay",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_0__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Grade Pay": {
+      "Value": "QmateGrade Pay",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_1__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Dearness Allowance": {
+      "Value": "3243",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_2__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "House Rent Allowance": {
+      "Value": "332",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_3__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "DA Rate": {
+      "Value": "12",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_4__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Basic": {
+      "Value": "132000",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_5__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "HRA_Rate": {
+      "Value": "8",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_6__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Payscale Flag": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "systemHeadDetail_7__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Residance Flag": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "systemHeadDetail_8__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Location Flag": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "systemHeadDetail_9__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Service Category Flag": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "systemHeadDetail_10__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Basic Pay": {
+      "Value": "",
+      "Type": "Text Value",
+      "Locator": "systemHeadDetail_11__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Division Flag": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "systemHeadDetail_12__HRMS_STRUCTURE_HEAD_HEAD_RATE_DERIVED"
+    },
+    "Save & Update": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnSaveSalary"
+    }
+  },
+  "Salary Disbursement Process": {
+    "URL": "HRM/salaryDisbursment/SalayDisbursmentIndex",
+    "Back To List": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btn btn-primary BackToList"
+    },
+    "Financial_Year": {
+      "Value": "20172018",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='Finyear']"
+    },
+    "Month": {
+      "Value": "april 2017",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "//div[@id='s2id_SalaryCycle']",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Disbursment_Date": {
+      "Value": {
+        "Day": "13",
+        "Month": "Feb",
+        "Year": "2020"
+      },
+      "Type": "Date",
+      "Locator": "BillDate"
+    },
+    "Credit Date": {
+      "Value": {
+        "Day": "1",
+        "Month": "",
+        "Year": ""
+      },
+      "Type": "Date",
+      "Locator": "CreditDate"
+    },
+    "Payment Unit": {
+      "Value": "Head Office",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "s2id_AccUnitId",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Pay Group": {
+      "Value": "",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "s2id_PayGroupId",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Paybill No (Text and locator issue)": {
+      "Value": "",
+      "Type": "Text-value",
+      "Locator": ""
+    },
+    "Remarks": {
+      "Value": "done",
+      "Type": "Text Value",
+      "Locator": "HRMS_SALARY_DISBURSMENT_MASTER_REMARKS"
+    },
+    "Payment Detail": {
+      "Credit_Date": {
+        "Value": {
+          "Day": "16",
+          "Month": "Feb",
+          "Year": "2020"
+        },
+        "Type": "Date",
+        "Locator": "CreditDate"
+      },
+      "Payment Location": {
+        "Value": "",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_UnitId']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Payment_Mode": {
+        "Value": "NEFT RTGS",
+        "Type": "Dropdown",
+        "Locator": "PaymentMode"
+      },
+      "Company_Bank": {
+        "Value": "",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "s2id_CompanyBank",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Ledger": {
+        "Value": "",
+        "Type": "Dropdown",
+        "Locator": "AccountLedger"
+      }
+    },
+    "Notify Employees": {
+      "Notify Employee by SMS": {
+        "Value": "Select",
+        "Type": "Checkbox",
+        "Locator": "chkNotifyEmpSMS"
+      },
+      "Notify Employee by  Email": {
+        "Value": "Select",
+        "Type": "Checkbox",
+        "Locator": "chkNotifyEmpEmail"
+      }
+    },
+    "Designation": {
+      "Value": "4",
+      "Type": "Dropdown",
+      "Locator1": "s2id_DesignationId",
+      "Locator2": "//div[@id='select2-drop']//input[contains(@class,'select2-input')]"
+    },
+    "Employee Unit": {
+      "Value": "",
+      "Type": "Dropdown-CheckBox",
+      "Locator": {
+        "Locator1": "//div[@class='btn-group open']",
+        "Locator2": "//*[@id='SalaryPayment']/div/div/div/div[2]/div[2]/div/div/div[2]//ul/li[1]//input"
+      }
+    },
+    "Is Gazetted": {
+      "Value": "Y",
+      "Type": "Dropdown",
+      "Locator1": "s2id_CompanyBank"
+    },
+    "Show Child Unit Employee": {
+      "Value": "Select",
+      "Type": "Checkbox",
+      "Locator": "ShowChildUnit"
+    },
+    "Apply Filter": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "'Apply Filter"
+    },
+    "Save": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnSave"
+    },
+    "Cancel": {
+      "Value": "",
+      "Type": "Button",
+      "Locator": "btnCancel"
+    },
+    "Filters": {
+      "Financial_Year": {
+        "Type": "dropdown",
+        "Locator": "//select[@id='Finyear']"
+      },
+      "Month": {
+        "Type": "dropdown",
+        "Locator": "//select[@id='SalaryCycleId']"
+      },
+      "Pay Group": {
+        "Value": "",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_PbGroupID']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Payment Location": {
+        "Value": "",
+        "Type": "SearchSelectDropdown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_UnitIds']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      }
+    }
+  },
+  "Leave_Encashment_Admin": {
+      "URL": "HRM/LeaveEncashment?q=8U+3wF0Q7l7KAX/XmkJC7w==",
+      "Employee_Name": {
+          "Type": "Text Value",
+          "Locator": "//input[@id='EMPLOYEE']"
+      },
+      "Leave_Type": {
+          "Value": "Privilege Leave",
+          "Type": "Dropdown",
+          "Locator": "//select[@id='ATTENDANCE_TYPE_ID']"
+      },
+      "Leave_Days": {
+          "Value": "10",
+          "Type": "Text Value",
+          "Locator": "//input[@id='LEAVE_DAYS_APPLIED']"
+      },
+    "Leave_Balance": {
+      "Value": "",
+      "Type" : "",
+      "Locator" : "//input[@id='LEAVE_ENCASHED']"
+    }
+  },
+  "Encash_Proposal": {
+      "URL": "HRM/LeaveEncashmentProposal",
+      "Location": {
+          "Value": "",
+          "Type": "SearchSelectDropdown",
+          "Locator": {
+            "Locator1": "//div[@id='s2id_UnitId']",
+            "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Pay_Group": {
+          "Value": "",
+          "Type": "SearchSelectDropdown",
+          "Locator": {
+            "Locator1": "//div[@id='s2id_PbGroupID']",
+            "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      }
+  },
+  "Leave_Encashment_Process": {
+        "URL": "HRM/LeaveEncashment?q=8U+3wF0Q7l6ZwbB7K1t9G0W5hD1/uC/P"
+  },
+  "Leave_Encashment_Paybill": {
+        "URL": "HRM/LeaveEncashmentPaybill",
+        "Back To List": {
+          "Value": "",
+          "Type": "Button",
+          "Locator": "btn btn-primary BackToList"
+        },
+        "Save": {
+          "Value": "",
+          "Type": "Button",
+          "Locator": "btnSave"
+        },
+
+        "Pay Group": {
+          "Value": "CO",
+          "Type": "SearchSelectDropdown",
+          "Locator": {
+            "Locator1": "s2id_PbGroupID",
+            "Locator2": "//*[@id='select2-drop']/div/input"
+          }
+        },
+         "Payment Location": {
+              "Value": "Head Office",
+              "Type": "SearchSelectDropdown",
+              "Locator": {
+                "Locator1": "s2id_UnitId",
+                "Locator2": "//*[@id='select2-drop']/div/input"
+              }
+         },
+        "Remark": {
+          "Value": "Test",
+          "Type": "Text Value",
+          "Locator": "//input[@id='txtremarks']"
+        },
+        "Pay with": {
+          "Value": "Bank/Cash",
+          "Type": "Dropdown",
+          "Locator": "//select[@id='PayWithId']"
+        },
+        "Start Date":{
+          "Value": "",
+          "Type": "",
+          "Locator": ""
+        },
+        "End Date":{
+          "Value": "",
+          "Type": "",
+          "Locator": ""
+        },
+        "Filter": {
+             "Financial Year": {
+              "Value": "20222023",
+              "Type": "Dropdown",
+              "Locator": "FINYEAR"
+               },
+              "Pay Group": {
+                "Value": "CO",
+                "Type": "SearchSelectDropdown",
+                "Locator": {
+                  "Locator1": "//div[@id='s2id_PayGroupIdIndex']",
+                  "Locator2": "//*[@id='select2-drop']/div/input"
+                }
+              },
+              "Payment Location": {
+                 "Value": "Head Office",
+                "Type": "SearchSelectDropdown",
+                "Locator": {
+                  "Locator1": "//div[@id='s2id_UnitIds']",
+                  "Locator2": "//*[@id='select2-drop']/div/input"
+                }
+              },
+            "Status": {
+              "Value": "",
+              "Type": "Dropdown",
+              "Locator": "status"
+            }
+        },
+        "Financial Year": {
+          "Value": "20222023",
+          "Type": "Dropdown",
+          "Locator": "FinYear"
+        },
+        "Bill Date": {
+          "Value": {
+            "Day": "09",
+            "Month": "Jun",
+            "Year": "2022"
+          },
+          "Type": "Date",
+          "Locator": "BILL_DATE"
+        },
+        "Payment Unit": {
+          "Value": "Head Office",
+          "Type": "SearchSelectDropdown",
+          "Locator": {
+            "Locator1": "//div[@id='s2id_UnitId']",
+            "Locator2": "//div[@id='select2-drop']//input[contains(@class,'select2-input')]"
+          }
+        },
+        "Manual Bill No": {
+          "Value": "1243",
+          "Type": "Text-value",
+          "Locator": "txtManualBillNo"
+        },
+        "Payslip Unit": {
+          "Value": "Head Office",
+          "Type": "SearchSelectDropdown",
+          "Locator": {
+            "Locator1": "s2id_PayUnitId",
+            "Locator2": "//*[@id='select2-drop']/div/input"
+          }
+        },
+        "Remarks": {
+          "Value": "",
+          "Type": "Text-value",
+          "Locator": "txtremarks"
+        },
+        "Bill Date": {
+          "Value": {
+            "Day": "09",
+            "Month": "jun",
+            "Year": "2022"
+          },
+          "Type": "Date",
+          "Locator": "BILL_DATE"
+        },
+        "Payment Unit": {
+          "Value": "Head Office",
+          "Type": "SearchSelectDropdown",
+          "Locator": {
+            "Locator1": "s2id_UnitId",
+            "Locator2": "//div[@id='select2-drop']//input[contains(@class,'select2-input')]"
+          }
+    }
+  },
+
+"Review_Attendance": {
+    "URL": "HRM/FreezeSalaryAttendance/AttendanceFreezeIndex",
+    "Financial_Year": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='Finyear']"
+    },
+    "Month": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='Month']"
+    },
+    "Employee Location": {
+      "Value": "Head Office",
+      "Type": "SearchSelectDropdown",
+      "Locator1": "//div[@id='s2id_UnitId']",
+      "Locator2": "//*[@id='select2-drop']/div/input"
+    },
+    "Pay Group": {
+      "Value": "",
+      "Type": "SearchSelectDropdown",
+      "Locator": {
+        "Locator1": "//div[@id='s2id_Paygroup']",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Employee Unit": {
+      "Value": "",
+      "Type": "SearchSelectDropDown",
+      "Locator": {
+        "Locator1": "//select[@id='SubUnit']",
+        "Locator2": "//*[@id='select2-drop']/div/input"
+      }
+    },
+    "Designation": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//div[@id='s2id_ddlDesignation']"
+    },
+    "Division": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "DIVISION"
+    },
+    "Is Gazetted": {
+      "Value": "",
+      "Type": "Dropdown",
+      "Locator": "//select[@id='ddlGazetted']"
+    },
+    "Filters": {
+      "Financial_Year": {
+        "Type": "Dropdown",
+        "Value": "20222023",
+        "Locator": "FinancialYear"
+      },
+      "Month": {
+        "Type": "Dropdown",
+        "Value": "Salary June 22",
+        "Locator": "CycleId"
+      },
+      "Pay Group": {
+        "Type": "SearchSelectDropdown",
+        "Value": "RIICO STAFF (Head Office)",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_PaygroupId']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      },
+      "Employee Location": {
+        "Value": "",
+        "Type": "SearchSelectDropDown",
+        "Locator": {
+          "Locator1": "//div[@id='s2id_Unit']",
+          "Locator2": "//*[@id='select2-drop']/div/input"
+        }
+      }
+    }
+  }
+}

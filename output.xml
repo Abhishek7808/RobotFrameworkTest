@@ -1,51 +1,547 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.0 on win32)" generated="20220628 15:02:49.063" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.0 on win32)" generated="20220722 15:19:35.085" rpa="false" schemaversion="3">
 <suite id="s1" name="Salary Automation" source="C:\Users\abhishek.rao\PycharmProjects\RobotFrameworkTest\Tests\HRMS\Salary_Automation">
-<suite id="s1-s1" name="Salary Process" source="C:\Users\abhishek.rao\PycharmProjects\RobotFrameworkTest\Tests\HRMS\Salary_Automation\Salary_Process.robot">
-<test id="s1-s1-t1" name="TESTING" line="49">
-<kw name="Split String" library="String">
-<var>${First}</var>
-<arg>${String}</arg>
-<arg>20</arg>
-<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<msg timestamp="20220628 15:02:49.986" level="INFO">${First} = ['', '22', '23']</msg>
-<status status="PASS" starttime="20220628 15:02:49.986" endtime="20220628 15:02:49.986"/>
+<suite id="s1-s1" name="Login ERP" source="C:\Users\abhishek.rao\PycharmProjects\RobotFrameworkTest\Tests\HRMS\Salary_Automation\Login_ERP.robot">
+<test id="s1-s1-t1" name="Report_Test" line="12">
+<kw name="Login_into_EPRASH">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220722 15:19:36.399" level="INFO">Opening browser 'chrome' to base url 'https://demoprojects.e-connectsolutions.com/eprash-test'.</msg>
+<status status="PASS" starttime="20220722 15:19:36.398" endtime="20220722 15:19:47.096"/>
 </kw>
-<kw name="Log Many" library="BuiltIn">
-<arg>${First}[0]</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<msg timestamp="20220628 15:02:49.988" level="INFO"/>
-<status status="PASS" starttime="20220628 15:02:49.987" endtime="20220628 15:02:49.988"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220722 15:19:47.097" endtime="20220722 15:19:47.305"/>
 </kw>
-<kw name="Log Many" library="BuiltIn">
-<arg>${First}[1]</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<msg timestamp="20220628 15:02:49.988" level="INFO">22</msg>
-<status status="PASS" starttime="20220628 15:02:49.988" endtime="20220628 15:02:49.988"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:LoginIdForShow</arg>
+<arg>${UserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220722 15:19:47.306" level="INFO">Typing text 'kritika.rsmml' into text field 'id:LoginIdForShow'.</msg>
+<status status="PASS" starttime="20220722 15:19:47.305" endtime="20220722 15:19:47.469"/>
 </kw>
-<kw name="Log Many" library="BuiltIn">
-<arg>${First}[2]</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<msg timestamp="20220628 15:02:49.989" level="INFO">23</msg>
-<status status="PASS" starttime="20220628 15:02:49.989" endtime="20220628 15:02:49.989"/>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:PasswordForShow</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220722 15:19:47.470" level="INFO">Typing text 'admin' into text field 'id:PasswordForShow'.</msg>
+<status status="PASS" starttime="20220722 15:19:47.469" endtime="20220722 15:19:47.739"/>
 </kw>
-<tag>Testing</tag>
-<status status="PASS" starttime="20220628 15:02:49.984" endtime="20220628 15:02:49.990"/>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220722 15:19:47.740" level="INFO">Clicking button 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20220722 15:19:47.740" endtime="20220722 15:19:50.874"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:19:52.887" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220722 15:19:50.874" endtime="20220722 15:19:52.887"/>
+</kw>
+<status status="PASS" starttime="20220722 15:19:36.398" endtime="20220722 15:19:52.888"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:19:52.890" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:19:52.889" endtime="20220722 15:20:06.803"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:11.814" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:06.812" endtime="20220722 15:20:11.814"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:20:11.815" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:20:11.815" endtime="20220722 15:20:12.100"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:17.106" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:12.104" endtime="20220722 15:20:17.106"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@id='divCalculated']</arg>
+<arg>60S</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220722 15:20:17.116" endtime="20220722 15:20:17.145"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//div[@id='divCalculated']//a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:20:17.149" level="INFO">Clicking element '//div[@id='divCalculated']//a'.</msg>
+<status status="PASS" starttime="20220722 15:20:17.148" endtime="20220722 15:20:17.390"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//div[@class='modal-dialog']//div[@class='modal-content ui-draggable']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220722 15:20:17.422" endtime="20220722 15:20:17.484"/>
+</kw>
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>//div[@class='modal-dialog']//div[@class='modal-content ui-draggable']</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220722 15:20:17.485" endtime="20220722 15:20:17.544"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[contains(text(),'OK')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220722 15:20:17.555" endtime="20220722 15:20:17.648"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[contains(text(),'OK')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:20:17.652" level="INFO">Clicking element '//button[contains(text(),'OK')]'.</msg>
+<status status="PASS" starttime="20220722 15:20:17.651" endtime="20220722 15:20:17.874"/>
+</kw>
+<kw name="Infinite Loop">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>10</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:20:17.890" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:20:17.889" endtime="20220722 15:20:26.044"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:31.047" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:26.045" endtime="20220722 15:20:31.047"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:20:31.048" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:20:31.047" endtime="20220722 15:20:31.226"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:36.227" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:31.226" endtime="20220722 15:20:36.227"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:20:36.294" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:20:36.228" endtime="20220722 15:20:36.294"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:20:36.294" endtime="20220722 15:20:36.308"/>
+</kw>
+<status status="PASS" starttime="20220722 15:20:17.889" endtime="20220722 15:20:36.309"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:20:36.309" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:20:36.309" endtime="20220722 15:20:39.429"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:44.430" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:39.429" endtime="20220722 15:20:44.430"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:20:44.431" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:20:44.431" endtime="20220722 15:20:44.605"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:49.607" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:44.606" endtime="20220722 15:20:49.607"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:20:49.644" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:20:49.607" endtime="20220722 15:20:49.644"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:20:49.645" endtime="20220722 15:20:49.645"/>
+</kw>
+<status status="PASS" starttime="20220722 15:20:36.309" endtime="20220722 15:20:49.645"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:20:49.646" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:20:49.646" endtime="20220722 15:20:54.066"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:20:59.067" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:54.066" endtime="20220722 15:20:59.067"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:20:59.068" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:20:59.068" endtime="20220722 15:20:59.242"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:04.244" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:20:59.243" endtime="20220722 15:21:04.244"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:21:04.283" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:21:04.245" endtime="20220722 15:21:04.284"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:21:04.284" endtime="20220722 15:21:04.285"/>
+</kw>
+<status status="PASS" starttime="20220722 15:20:49.646" endtime="20220722 15:21:04.285"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:21:04.286" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:21:04.285" endtime="20220722 15:21:06.875"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:11.878" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:06.875" endtime="20220722 15:21:11.878"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:21:11.879" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:21:11.879" endtime="20220722 15:21:12.093"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:17.094" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:12.094" endtime="20220722 15:21:17.094"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:21:17.129" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:21:17.094" endtime="20220722 15:21:17.129"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:21:17.129" endtime="20220722 15:21:17.130"/>
+</kw>
+<status status="PASS" starttime="20220722 15:21:04.285" endtime="20220722 15:21:17.130"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:21:17.131" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:21:17.130" endtime="20220722 15:21:19.692"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:24.693" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:19.692" endtime="20220722 15:21:24.693"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:21:24.695" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:21:24.694" endtime="20220722 15:21:24.862"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:29.866" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:24.863" endtime="20220722 15:21:29.866"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:21:29.900" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:21:29.867" endtime="20220722 15:21:29.900"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:21:29.900" endtime="20220722 15:21:29.901"/>
+</kw>
+<status status="PASS" starttime="20220722 15:21:17.130" endtime="20220722 15:21:29.901"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:21:29.902" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:21:29.901" endtime="20220722 15:21:32.342"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:37.343" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:32.342" endtime="20220722 15:21:37.343"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:21:37.344" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:21:37.344" endtime="20220722 15:21:37.559"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:42.560" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:37.559" endtime="20220722 15:21:42.560"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:21:42.608" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:21:42.561" endtime="20220722 15:21:42.608"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:21:42.609" endtime="20220722 15:21:42.609"/>
+</kw>
+<status status="PASS" starttime="20220722 15:21:29.901" endtime="20220722 15:21:42.609"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:21:42.610" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:21:42.610" endtime="20220722 15:21:45.211"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:50.213" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:45.212" endtime="20220722 15:21:50.213"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:21:50.214" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:21:50.214" endtime="20220722 15:21:50.388"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:21:55.389" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:50.388" endtime="20220722 15:21:55.389"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:21:55.414" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:21:55.389" endtime="20220722 15:21:55.414"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:21:55.414" endtime="20220722 15:21:55.415"/>
+</kw>
+<status status="PASS" starttime="20220722 15:21:42.610" endtime="20220722 15:21:55.415"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:21:55.415" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:21:55.415" endtime="20220722 15:21:58.089"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:22:03.091" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:21:58.090" endtime="20220722 15:22:03.091"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:22:03.092" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:22:03.091" endtime="20220722 15:22:03.306"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:22:08.307" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:22:03.306" endtime="20220722 15:22:08.307"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:22:08.332" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:22:08.307" endtime="20220722 15:22:08.332"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:22:08.332" endtime="20220722 15:22:08.333"/>
+</kw>
+<status status="PASS" starttime="20220722 15:21:55.415" endtime="20220722 15:22:08.333"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:22:08.333" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:22:08.333" endtime="20220722 15:22:10.638"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:22:15.642" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:22:10.640" endtime="20220722 15:22:15.642"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:22:15.643" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:22:15.643" endtime="20220722 15:22:15.829"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:22:20.830" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:22:15.830" endtime="20220722 15:22:20.830"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:22:20.899" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:22:20.831" endtime="20220722 15:22:20.899"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:22:20.899" endtime="20220722 15:22:20.900"/>
+</kw>
+<status status="PASS" starttime="20220722 15:22:08.333" endtime="20220722 15:22:20.900"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220722 15:22:20.900" level="INFO">Opening url 'https://demoprojects.e-connectsolutions.com/eprash-test/HRM/MIS/IncomeTaxDeductionIndex'</msg>
+<status status="PASS" starttime="20220722 15:22:20.900" endtime="20220722 15:22:23.369"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:22:28.371" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:22:23.370" endtime="20220722 15:22:28.371"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>//select[@id='ReportType']</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220722 15:22:28.372" level="INFO">Selecting options from selection list '//select[@id='ReportType']' by value 1.</msg>
+<status status="PASS" starttime="20220722 15:22:28.372" endtime="20220722 15:22:28.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220722 15:22:33.549" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220722 15:22:28.547" endtime="20220722 15:22:33.549"/>
+</kw>
+<kw name="Get Value" library="SeleniumLibrary">
+<var>${R_Emp}</var>
+<arg>//label[@id='lblRemainingEmp']</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:22:33.575" level="INFO">${R_Emp} = None</msg>
+<status status="PASS" starttime="20220722 15:22:33.549" endtime="20220722 15:22:33.576"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${R_Emp} == 3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220722 15:22:33.576" endtime="20220722 15:22:33.576"/>
+</kw>
+<status status="PASS" starttime="20220722 15:22:20.900" endtime="20220722 15:22:33.576"/>
+</iter>
+<status status="PASS" starttime="20220722 15:20:17.888" endtime="20220722 15:22:33.577"/>
+</for>
+<status status="PASS" starttime="20220722 15:20:17.888" endtime="20220722 15:22:33.577"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='btnView']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220722 15:22:33.582" level="INFO">Clicking element '//input[@id='btnView']'.</msg>
+<status status="PASS" starttime="20220722 15:22:33.581" endtime="20220722 15:22:33.984"/>
+</kw>
+<tag>reporttest</tag>
+<status status="PASS" starttime="20220722 15:19:36.394" endtime="20220722 15:22:33.999"/>
 </test>
-<status status="PASS" starttime="20220628 15:02:49.129" endtime="20220628 15:02:49.991"/>
+<status status="PASS" starttime="20220722 15:19:35.185" endtime="20220722 15:22:34.002"/>
 </suite>
-<status status="PASS" starttime="20220628 15:02:49.069" endtime="20220628 15:02:49.994"/>
+<status status="PASS" starttime="20220722 15:19:35.112" endtime="20220722 15:22:34.018"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Testing</stat>
+<stat pass="1" fail="0" skip="0">reporttest</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Salary Automation">Salary Automation</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Salary Process">Salary Automation.Salary Process</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Login ERP">Salary Automation.Login ERP</stat>
 </suite>
 </statistics>
 <errors>
